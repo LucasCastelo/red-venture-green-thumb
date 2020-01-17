@@ -18,8 +18,9 @@
 .quizz-sec {
   min-height: 99vh;
   min-width: 98vw;
-  width: 98vw;
+  width: 100vw;
   height: 100vh;
+  margin: 0;
 }
 
 .main-logo {

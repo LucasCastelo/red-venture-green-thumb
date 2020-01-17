@@ -16,6 +16,7 @@ import './assets/css/main.css';
 import './assets/css/quiz.css';
 import './assets/css/picks.css';
 import './assets/css/carousel.css';
+import './assets/css/product.css';
 
 /* CONTEXT */
 import { ReqContext } from './context/ContextReq';
@@ -46,7 +47,9 @@ function App() {
           <Route exact path='/picks'>
             <Picks reqParams={Req.reqParams}></Picks>
           </Route>
-          <Route path='/plant/:icon' component={ProductPage}></Route>
+          <Route path='/plant'>
+            <ProductPage></ProductPage>
+          </Route>
         </Switch>
       </div>
     </Router>
