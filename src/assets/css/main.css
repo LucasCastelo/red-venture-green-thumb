@@ -1,0 +1,109 @@
+#root {
+  user-select: none;
+}
+
+.bg-intro {
+  background-image: url('./../illustrations/illustration-home.png');
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: right bottom;
+  background-size: contain;
+  margin-right: 8vw;
+}
+
+.intro-holster {
+  margin-left: 8vw;
+}
+
+.quizz-sec {
+  min-height: 99vh;
+  min-width: 98vw;
+  width: 98vw;
+  height: 100vh;
+}
+
+.main-logo {
+  width: 15vw;
+  margin-top: 4vw;
+  float: left;
+}
+
+.intro-desc {
+  font-size: 4vw;
+  cursor: default;
+}
+
+.start-btn {
+  border-radius: 100px;
+  height: 6vh;
+  font-size: 1vw;
+  display: flex;
+  align-items: center;
+}
+/* RESPONSIVE CSS */
+@media (max-width: 992px) {
+  .bg-intro {
+    background-image: url('./../illustrations/illustration-home-mobile.png');
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center bottom;
+    background-size: contain;
+  }
+
+  .main-logo {
+    width: 50vw;
+    text-align: center;
+    float: none;
+    margin-top: 8vw;
+  }
+
+  .intro-desc {
+    font-size: 10vw;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .start-btn {
+    margin: auto;
+    border-radius: 100px;
+    height: 10vw;
+    font-size: 4vw;
+  }
+}
+
+/* FONTS */
+.mont-font-light {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.mont-font-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/* COLORS */
+.bg-color-green {
+  background-color: #15573f;
+}
+
+.bg-color-salmon {
+  background-color: #fd9872;
+}
+
+.bg-color-light-green {
+  background-color: #7baf9e;
+}
+
+.text-color-green {
+  color: #15573f;
+}
+
+.text-color-salmon {
+  color: #fd9872;
+}
+
+.text-color-light-green {
+  color: #7baf9e;
+}

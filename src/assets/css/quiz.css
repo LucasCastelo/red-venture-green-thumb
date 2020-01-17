@@ -1,0 +1,350 @@
+.flex-question-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mob-top-logo {
+  height: 6vw;
+  margin-top: 4vw;
+}
+
+.question-title {
+  padding: 0 20%;
+  margin-bottom: 0;
+}
+
+.sub-desc {
+  font-size: 1vw;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+/*---------------------------------------*/
+/*-----------ESTILOS GERAIS--------------*/
+
+.parent-node {
+  width: 80%;
+  margin: auto;
+}
+
+.cards-holster {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vw;
+}
+
+.option-card {
+  width: 30%;
+  background-color: whitesmoke;
+  padding: 2vw 0;
+  font-size: 1vw;
+  border-radius: 10px;
+  transition: 400ms;
+  cursor: pointer;
+}
+
+/*----------------------------------------------------------*/
+/*TROCA DE IMAGENS 'onHover' esconde a imagem colorida------*/
+/*revela a imagem branca muda o BG para a cor correspondende*/
+/*Aplica boxShadow de cor correspondente--------------------*/
+
+.show {
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
+
+.show-on-hover {
+  display: none;
+}
+
+.option-card:hover div .hide-on-hover {
+  display: none;
+}
+
+.option-card:hover div .show-on-hover {
+  display: inline;
+}
+
+.option-card-green:hover {
+  background-color: #7baf9e;
+  color: white;
+  -webkit-box-shadow: 7px 20px 36px -19px rgba(123, 175, 158, 1);
+  -moz-box-shadow: 7px 20px 36px -19px rgba(123, 175, 158, 1);
+  box-shadow: 7px 20px 36px -19px rgba(123, 175, 158, 1);
+}
+
+.option-card-orange:hover {
+  background-color: #fd9872;
+  color: white;
+  -webkit-box-shadow: 7px 20px 36px -19px rgba(253, 152, 114, 1);
+  -moz-box-shadow: 7px 20px 36px -19px rgba(253, 152, 114, 1);
+  box-shadow: 7px 20px 36px -19px rgba(253, 152, 114, 1);
+}
+
+/*----------------------------------------*/
+/*QUANDO SELECIONADO APLICAR ESTES ESTILOS*/
+
+.sel-orange {
+  background-color: #fd9872;
+  color: white;
+  -webkit-box-shadow: 7px 20px 36px -19px rgba(253, 152, 114, 1);
+  -moz-box-shadow: 7px 20px 36px -19px rgba(253, 152, 114, 1);
+  box-shadow: 7px 20px 36px -19px rgba(253, 152, 114, 1);
+}
+
+.sel-green {
+  background-color: #7baf9e;
+  color: white;
+  -webkit-box-shadow: 7px 20px 36px -19px rgba(123, 175, 158, 1);
+  -moz-box-shadow: 7px 20px 36px -19px rgba(123, 175, 158, 1);
+  box-shadow: 7px 20px 36px -19px rgba(123, 175, 158, 1);
+}
+
+/*----------------------------------------*/
+/*------------LOGO LATERAL DESK-----------*/
+
+.side-logo {
+  margin-left: 10%;
+  float: left;
+  transform: rotate(-90deg) translateX(-50%) translateY(-400%);
+}
+
+.side-line {
+  width: 200%;
+  height: 2px;
+  position: absolute;
+  transform: translateX(-108%) translateY(15px);
+}
+
+/*----------------------------------------*/
+/*------------NEXT e PREV buttons---------*/
+.buttons-holster {
+  display: flex;
+  width: 100%;
+  margin-top: 4vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quizz-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #15573f;
+  border: #15573f solid 1px;
+  padding: 0.4vw 2vw;
+  border-radius: 100px;
+  font-size: 1.2vw;
+  transition: 300ms;
+}
+
+.quizz-button i {
+  margin-right: 0.5vw;
+}
+
+.quizz-button p {
+  margin: 0;
+}
+
+.quizz-button:hover {
+  background-color: #15573f;
+  color: white;
+}
+
+@media (max-width: 1440px) {
+  .question-title {
+    font-size: 3vw;
+    padding: 0;
+  }
+
+  .side-logo {
+    margin: 0;
+    transform: rotate(-90deg) translateX(-50%) translateY(-100%);
+  }
+  .side-line {
+    width: 120%;
+  }
+
+  .cards-holster {
+    margin-bottom: 8vw;
+    height: 30%;
+  }
+  .option-card div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.4vw;
+    height: 20px;
+    padding: 4vw 0vw;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1366px) {
+  .parent-node {
+    width: 100%;
+    margin: auto;
+  }
+
+  .question-title {
+    font-size: 2vw;
+    padding: 0;
+  }
+
+  .cards-holster {
+    margin-bottom: 2vw;
+    height: 30%;
+  }
+
+  .side-line {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .parent-node {
+    width: 100%;
+    margin: auto;
+  }
+
+  .sub-desc {
+    font-size: 2vw;
+  }
+
+  .buttons-holster {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .quizz-button {
+    font-size: 3vw;
+    margin: 0vw 0;
+  }
+
+  .cards-holster {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .cards-holster div {
+    height: 10vw;
+  }
+
+  .option-card {
+    width: 70%;
+    padding: 0;
+    margin-bottom: 1vw;
+  }
+
+  .option-card div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 2.8vw;
+  }
+
+  .option-card div img {
+    width: 20%;
+    padding: 4%;
+  }
+
+  .question-title {
+    font-size: 5vw;
+    padding: 0;
+  }
+
+  .side-line {
+    width: 180%;
+  }
+
+  .side-logo {
+    transform: rotate(-90deg) translateX(-50%) translateY(-120%);
+  }
+}
+
+@media (max-width: 768px) {
+  .parent-node {
+    width: 80%;
+    margin: auto;
+  }
+  .sub-desc {
+    font-size: 2.2vw;
+  }
+
+  .buttons-holster {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .quizz-button {
+    font-size: 4vw;
+  }
+
+  .option-card {
+    margin-bottom: 2vw;
+  }
+
+  .cards-holster div {
+    height: 10vw;
+    width: 100%;
+  }
+
+  .option-card div {
+    font-size: 3vw;
+  }
+
+  .question-title {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .sub-desc {
+    font-size: 4vw;
+  }
+
+  .buttons-holster {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .quizz-button {
+    font-size: 6vw;
+    margin: 0 0;
+  }
+
+  .option-card {
+    width: 100%;
+  }
+
+  .cards-holster div {
+    height: 20vw;
+  }
+
+  .option-card div {
+    font-size: 6vw;
+  }
+
+  .question-title {
+    font-size: 8vw;
+  }
+}

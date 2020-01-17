@@ -1,0 +1,151 @@
+.pick-page-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 4vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.pick-page-title p {
+  margin: 0;
+  text-align: center;
+}
+
+.pick-page-title img {
+  width: 25%;
+}
+
+.cards-table-holster {
+  width: 100%;
+  height: auto;
+  padding-bottom: 6vh;
+}
+
+.card-holster {
+  width: 33.3%;
+  display: inline-block;
+}
+
+.card-unit {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 32px -11px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 32px -11px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 32px -11px rgba(0, 0, 0, 0.25);
+}
+
+.card-unit img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.price-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 1vw;
+}
+
+.price-icons p {
+  margin: 0;
+}
+
+.price-icons div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.price-icons div img {
+  width: 15%;
+  margin: 0 5px;
+}
+
+.card-name {
+  padding: 0 20px;
+  font-size: 1vw;
+  margin: 0;
+}
+
+.buy-button {
+  display: block;
+  color: #15573f;
+  margin: auto;
+  font-size: 1.6vw;
+  width: 80%;
+  text-align: center;
+  padding: 10px 1vw;
+  border: 1px solid #15573f;
+  border-radius: 40px;
+  background-color: white;
+}
+
+.buy-button:hover {
+  background-color: #15573f;
+  color: white;
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1366px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .pick-page-title p {
+    font-size: 8vw;
+    padding: 0 20vw;
+    line-height: 8vw;
+  }
+
+  .buy-button p {
+    font-size: 6vw;
+    margin: 1vw 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .pick-page-title p {
+    font-size: 10vw;
+    padding: 0 20vw;
+    line-height: 10vw;
+  }
+  .pick-page-title img {
+    width: 50%;
+    margin-bottom: 4vw;
+  }
+
+  .buy-button {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  .buy-button p {
+    font-size: 30px;
+    padding: 0;
+    margin: 15px 0;
+  }
+}
+
+.card-unit-carousel {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 32px -11px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 32px -11px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 32px -11px rgba(0, 0, 0, 0.25);
+}
+
+.card-holster-carousel {
+  width: 33.3%;
+  display: inline;
+}
